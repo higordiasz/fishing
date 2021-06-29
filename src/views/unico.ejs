@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fishing</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="widht=device-widht, initial-scale=1" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+</head>
+
+<body>
+    <div class="col-8 principal">
+        <div class="row">
+            <div calss="col-md-5">
+                <img class="col-md-6 perfil" src="<%= conta.image %>">
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <span class="username">
+                        <h5>
+                            <%= conta.username %>
+                        </h5>
+                    </span>
+                </div>
+                <div class="row">
+                    <span class="seguidores">
+                        <h7>
+                            <%= conta.seguidores %> Seguidores
+                        </h7>
+                    </span>
+                    <span class="seguindo">
+                        <h7>
+                            <%= conta.seguindo %> Seguindo
+                        </h7>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="biosdiv">
+                <h5>Bios: </h5>
+            </div>
+            <div class="col-md-7 bio">
+                <h7>
+                    <%= conta.bio %>
+                </h7>
+            </div>
+        </div>
+    </div>
+    <form class="col-12 formulario" method="POST" action="resultado">
+        <div class="row">
+            <input type="text" placeholder="Digite o nome da conta para pesquisa" id="conta" name="conta" />
+            <button type="submit" class="buttonleft" formaction="unico">Pesquisa Unica</button>
+            <div class="padding5"></div>
+            <button type="submit" class="buttonright" formaction="multiplo">Pesquisa Multipla</button>
+        </div>
+    </form>
+    <h2 class="beta">VERSAO BETA</h2>
+</body>

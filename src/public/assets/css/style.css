@@ -1,0 +1,253 @@
+body {
+    background-color: black;
+}
+
+.padding {
+    padding: 3%;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 25px;
+    width: 50%;
+    min-width: 250px;
+    max-width: 350px;
+    padding-left: 35px;
+    font-size: 10pt;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+img {
+    justify-self: center;
+    align-self: center;
+    max-width: 275px;
+    max-height: 275px;
+    flex: 0 0 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.padding5 {
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.buttonleft {
+    margin-left: auto;
+}
+
+.buttonright {
+    margin-right: auto;
+}
+
+p {
+    text-align: center;
+    color: white;
+    padding: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.padding2 {
+    padding: 2%;
+}
+
+.divcenter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.d-sm-flex {
+    display: flex !important; 
+}
+
+.justify-content-center {
+    justify-content: center !important; 
+}
+
+.justify-content-right {
+    justify-content: right !important;
+}
+
+.divfooter {
+    flex: 1;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.textfooter {
+    color: white !important;
+    font-size: 8pt;
+    margin: auto;
+}
+
+.textfooter1 {
+    color: white !important;
+    font-size: 8pt;
+}
+
+.textfooter2 {
+    color: white !important;
+    font-size: 8pt;
+}
+
+.justify-content-sm-between {
+    justify-content: space-between !important; 
+}
+
+.text-muted, .preview-list .preview-item .preview-item-content p .content-category {
+    color: #6c7293 !important; 
+}
+
+.d-block {
+    display: block !important; 
+}
+
+.text-center {
+    text-align: center !important; 
+}
+
+textarea:focus, input:focus, select:focus, button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.menu {
+    background-color: #32323c;
+    min-height: 70%;
+    padding: 20px;
+    margin-top: 3%;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.imgr {
+    max-width: 150px !important;
+    min-width: 50px !important;
+    max-height: 150px !important;
+    min-height: 50px !important;
+    background-color: white;
+    border-radius: 150px;
+    border: 1 none;
+    padding: 5px !important;
+}
+
+.padding10 {
+    padding: 10%;
+    margin-top: 50px;
+}
+
+.spanmenu {
+    color: white;
+    margin-top: auto;
+    margin-left: auto;
+    padding: 10px;
+    font-size: 25pt;
+    justify-self: right;
+    background-color: black;
+    border-start-start-radius: 30px;
+    border-end-start-radius: 30px;
+}
+
+.erro {
+    color: red !important;
+    font-size: 15px !important;
+}
+.principal {
+    position: absolute;
+    width: 50%;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    max-width: 500px !important;
+    max-height: 300px !important;
+    min-width: 388px !important;
+    padding: 0;
+    border-radius: 15px;
+    background-color: rgb(27, 27, 27);
+    transform: translate(-50%,-50%);
+}
+
+.perfil {
+    padding: 0;
+    border-radius: 110px;
+    max-height: 90px;
+    max-width: 90px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.username {
+    color:rgb(255,255,255) !important;
+    margin-top: 30px;
+    padding-left: 7%;
+}
+
+.seguidores {
+    padding-left: 7%;
+    color:rgb(255,255,255) !important;
+}
+
+.seguindo {
+    color:rgb(255,255,255) !important;
+    padding-left: 7%;
+}
+
+.biosdiv {
+    margin-top: 10px;
+    padding-left: 50px;
+    color: rgb(255,255,255) !important;
+}
+
+.bio {
+    margin-top: 10px;
+    padding-left: 50px;
+    color: rgb(255,255,255) !important;
+}
+
+.formulario {
+    position: absolute;
+    top: 5%;
+}
+
+.formulario input {
+    margin-right: 10px !important;
+    margin-left: 50px !important;
+    margin-top: 10px !important;
+}
+
+.formulario button {
+    margin-top: 10px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.beta {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%,-50%);
+    color: rgb(255,255,255);
+}

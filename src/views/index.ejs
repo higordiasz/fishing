@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fishing</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="widht=device-widht, initial-scale=1" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="padding2"></div>
+        <div class="container col-10">
+            <img class="imgcenter" src="assets/img/boia.png" />
+        </div>
+        <div class="padding2"></div>
+        <div class="container col-10">
+            <form method="POST" action="resultado">
+                <input type="text" placeholder="Digite o nome da conta para pesquisa" id="conta" name="conta" />
+                <div class="padding2"></div>
+                <div class="row">
+                    <button type="submit" class="buttonleft" formaction="unico">Pesquisa Unica</button>
+                    <div class="padding5"></div>
+                    <button type="submit" class="buttonright" formaction="multiplo">Pesquisa Multipla</button>
+                </div>
+                <div class="col-10 divcenter">
+                    <p>
+                        Este ferramenta roda somente em seu dispositivo(lado do cliente).
+                    </p>
+                    <p>
+                        Os nomes de usuários não são trasmitidos para nosso servidor.
+                    </p>
+                    <% if (erro != "") { %>
+                        <div class="padding2"></div>
+                        <span class="erro">
+                            <p class="erro">
+                                <%= erro %>
+                            </p>
+                        </span>
+                    <% } %>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="divfooter">
+            <a class="col-3 textfooter1" href="">Termo</a>
+            <a class="col-3 textfooter2" href="">Privacidade</a>
+            <span class="col-5 textfooter">Copyright ©
+                hrmoney.com.br
+                2021</span>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.min.js" async defer />
+</body>

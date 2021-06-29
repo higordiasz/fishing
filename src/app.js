@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 var path = require('path');
 const flash = require('express-flash');
 const session = require('express-session');
+const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
@@ -35,6 +36,29 @@ app.use(function (req, res, next) {
 
 // Database
 
+const Cookie = require('./model/cookies');
+
+mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
+    useUnifiedTopology: true,
+    useFindAndModify: true,
+    useNewUrlParser: true,
+    useCreateIndex: true
+});
+
+const db = mongoose.connection;
+
+db.on('connected', () => {
+    console.log('Mongoose default connection is open');
+});
+
+db.on('error', err => {
+    console.log(`Mongoose default connection has occured \n${err}`);
+});
+
+db.on('disconnected', () => {
+    console.log('Mongoose default connection is disconnected');
+});
+
 //Ativar o HTTPS
 /*
 app.use((req, res, next) => { //Cria um middleware onde todas as requests passam por ele
@@ -45,8 +69,7 @@ app.use((req, res, next) => { //Cria um middleware onde todas as requests passam
 });
 */
 
-app.use((req, res, next) => {
-    res.status(200).send({message: 'oi'})
-});
+const fishingRouter = require('./router/fishingRouter');
+app.use('/', fishingRouter);
 
 module.exports = app;
